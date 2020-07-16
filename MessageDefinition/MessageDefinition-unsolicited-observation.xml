@@ -23,25 +23,25 @@
     </focus>
      <focus>
         <code value="DiagnosticReport" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport" />
+        <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-DiagnosticReport" />
         <min value="1" />
         <max value="1" />
     </focus>
       <focus>
         <code value="Observation" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+        <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Observation" />
         <min value="0" />
         <max value="*" />
     </focus>
     <focus>
         <code value="Patient" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Patient" />
         <min value="1" />
         <max value="1" />
     </focus>
     <focus>
         <code value="Practitioner" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Practitioner" />
         <min value="0" />
         <max value="*" />
     </focus>
