@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="message-events"/>
+    <url value="https://fhir.lhcre.nhs.uk/CodeSystem/message-event"/>
+    <identifier>
+        <system value="https://fhir.lhcre.nhs.uk/identifier/CodeSystem"/>
+        <value value="message-events"/>
+    </identifier>
+    <version value="1.0.0"/>
+    <name value="Message Events"/>
+    <title value="Message Events"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-07-16"/>
+    <publisher value="Greater Manchester LHCRE"/>
+    <contact>
+        <name value="FHIR project team"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/fhir"/>
+        </telecom>
+    </contact>
+    <description value="Common messaging events. I am the description of the resource, should I be included  in the default rendering"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="unsolicited-observation"/>
+        <display value="Unsolicited transmission of an observation message (HL7v2.4 ORU_R01)"/>
+    </concept>
+</CodeSystem>
