@@ -10,9 +10,9 @@
     <status value="active" />
     <date value="2020-07-16" />
     <eventCoding>
-        <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
-        <code value="prescription-order" />
-        <display value="Prescription Order" />
+        <system value="https://fhir.lhcre.nhs.uk/CodeSystem/message-event" />
+        <code value="unsolicited-observation" />
+        <display value="Unsolicited Observations" />
     </eventCoding>
     <category value="consequence" />
     <focus>
@@ -21,13 +21,13 @@
         <min value="1" />
         <max value="1" />
     </focus>
-     <focus>
+    <focus>
         <code value="DiagnosticReport" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport" />
         <min value="1" />
         <max value="1" />
     </focus>
-      <focus>
+    <focus>
         <code value="Observation" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
         <min value="0" />
