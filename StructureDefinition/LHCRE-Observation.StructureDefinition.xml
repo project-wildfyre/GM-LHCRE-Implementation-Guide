@@ -40,8 +40,8 @@
   <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.identifier">
-      <path value="Observation.identifier" />
+    <element id="Observation.identifier.value">
+      <path value="Observation.identifier.value" />
       <min value="1" />
     </element>
     <element id="Observation.performer">

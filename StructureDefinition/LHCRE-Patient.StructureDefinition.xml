@@ -83,7 +83,6 @@
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
       <short value="PDS Registered Practice" />
-      <min value="1" />
     </element>
     <element id="Patient.managingOrganization.identifier">
       <path value="Patient.managingOrganization.identifier" />
