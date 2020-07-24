@@ -43,5 +43,12 @@
         <targetProfile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Practitioner" />
       </type>
     </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Observation" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
