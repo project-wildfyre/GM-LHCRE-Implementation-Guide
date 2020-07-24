@@ -34,6 +34,10 @@
       <path value="DiagnosticReport.identifier" />
       <min value="1" />
     </element>
+    <element id="DiagnosticReport.identifier.value">
+      <path value="DiagnosticReport.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="DiagnosticReport.performer">
       <path value="DiagnosticReport.performer" />
       <type>
