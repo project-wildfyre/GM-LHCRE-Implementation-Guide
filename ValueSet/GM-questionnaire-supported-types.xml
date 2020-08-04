@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="GM-questionnaire-supported-types"/>
+    <url value="https://fhir.lhcre.nhs.uk/ValueSet/GM-questionnaire-supported-types"/>
+    <version value="1.0.0"/>
+    <name value="GM-questionnaire-supported-types"/>
+    <status value="draft"/>
+    <description value="List of supported FHIR Questionnaire Types"/>
+    <compose>   
+    </compose>
+</ValueSet>
