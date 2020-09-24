@@ -1,0 +1,245 @@
+{
+    "resourceType": "Bundle",
+    "id": "epro-daily",
+    "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "69046ae8-cc9b-4e57-9aba-00569bcb638c"
+    },
+    "type": "message",
+    "entry": [
+        {
+            "fullUrl": "urn:oid:22ed2deb-effa-408c-9437-d3c4975ff448",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "eventCoding": {
+                    "system": "https://fhir.lhcre.nhs.uk/CodeSystem/message-event",
+                    "code": "patient-form",
+                    "display": "Patient Form"
+                },
+                "destination": [
+                    {
+                        "name": "GM Rhapsody",
+                        "target": {
+                            "display": "GM Rhapsody"
+                        },
+                        "endpoint": "https://urlofrhapsodyendpoint"
+                    }
+                ],
+                "sender": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "QRP"
+                    },
+                    "display": "GM ePRO"
+                },
+                "source": {
+                    "name": "ePRO",
+                    "endpoint": "https://urlofepro"
+                },
+                "focus": [
+                    {
+                        "reference": "urn:oid:3915b469-57b7-470f-942f-e276c4458d63"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:3915b469-57b7-470f-942f-e276c4458d63",
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "identifier": [
+                    {
+                        "system": "https://fhir.epro.uk/Id/FormId",
+                        "value": "108512374"
+                    }
+                ],
+                "questionnaire": "https://fhir.gm.nhs.uk/Questionnaire/remora-daily",
+                "status": "completed",
+                "subject": {
+                    "reference": "urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231"
+                },
+                "authored": "2020-09-24T04:44:16+00:00",
+                "source": {
+                    "reference": "urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231"
+                },
+                "item": [
+                    {
+                        "linkId": "1.1",
+                        "text" : "Pain",
+                        "answer": [
+                            {
+                                "valueReference": {
+                                    "reference" : "urn:oid:926b9534-c247-45da-916c-b5bbbfb3da6d"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "1.2",
+                        "text" : "Function",
+                        "answer": [
+                            {
+                                "valueInteger": 5
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "1.3",
+                        "text" : "Fatigue",
+                        "answer": [
+                            {
+                                "valueInteger": 5
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "1.4",
+                        "text" : "Sleep",
+                        "answer": [
+                            {
+                                "valueInteger": 5
+                            }
+                        ]
+                    }
+                    ,
+                    {
+                        "linkId": "1.5",
+                        "text" : "Physical well-being",
+                        "answer": [
+                            {
+                                "valueInteger": 6
+                            }
+                        ]
+                    }
+                    ,
+                    {
+                        "linkId": "1.6",
+                        "text" : "Emotional well-being",
+                        "answer": [
+                            {
+                                "valueInteger": 7
+                            }
+                        ]
+                    }
+                    ,
+                    {
+                        "linkId": "1.7",
+                        "text" : "Coping",
+                        "answer": [
+                            {
+                                "valueInteger": 4
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "1.9",
+                        "text" : "Morning stiffness",
+                        "answer": [
+                            {
+                                "valueInteger": 60
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:926b9534-c247-45da-916c-b5bbbfb3da6d",
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "443394008",
+                            "display": "Visual analogue scale pain score"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231"
+                },
+                "effectiveDateTime": "2020-09-24T04:44:16+00:00",
+                "valueQuantity": {
+                    "value": 5
+                },
+                "referenceRange": [
+                    {
+                        "text": "0-10"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "d980f514-8d01-4d6b-9b52-29436fda1231",
+                "identifier": [
+                    {
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                                            "code": "01"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "3333333333"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "SMITH",
+                        "given": [
+                            "FREDRICA"
+                        ],
+                        "prefix": [
+                            "MRS"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+441234567890",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1965-12-13",
+                "address": [
+                    {
+                        "use": "home",
+                        "city": "MALTON",
+                        "district": "NORTH YORKSHIRE",
+                        "postalCode": "YO32 5TT"
+                    }
+                ],
+                "generalPractitioner": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                            "value": "G5612908"
+                        },
+                        "display": "Dr Gregory Townley"
+                    }
+                ],
+                "managingOrganization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "Y06601"
+                    },
+                    "display": "MALTON GP PRACTICE"
+                }
+            }
+        }
+    ]
+}

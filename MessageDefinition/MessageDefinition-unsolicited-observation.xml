@@ -5,7 +5,7 @@
         <system value="https://fhir.lhcre.nhs.uk//MessageDefinition/" />
         <value value="unsolicited-observation" />
     </identifier>
-    <version value="1.0.0" />
+    <version value="1.0.1" />
     <title value="unsolicited-observation" />
     <status value="active" />
     <date value="2020-07-16" />
@@ -16,11 +16,6 @@
     </eventCoding>
     <category value="consequence" />
     <focus>
-        <code value="MessageHeader" />
-        <min value="1" />
-        <max value="1" />
-    </focus>
-    <focus>
         <code value="DiagnosticReport" />
         <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-DiagnosticReport" />
         <min value="1" />
@@ -29,7 +24,7 @@
     <focus>
         <code value="Observation" />
         <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Observation" />
-        <min value="0" />
+        <min value="1" />
         <max value="*" />
     </focus>
     <focus>
@@ -37,17 +32,5 @@
         <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Patient" />
         <min value="1" />
         <max value="1" />
-    </focus>
-    <focus>
-        <code value="Practitioner" />
-        <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Practitioner" />
-        <min value="0" />
-        <max value="*" />
-    </focus>
-    <focus>
-        <code value="Organization" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <min value="0" />
-        <max value="*" />
     </focus>
 </MessageDefinition>

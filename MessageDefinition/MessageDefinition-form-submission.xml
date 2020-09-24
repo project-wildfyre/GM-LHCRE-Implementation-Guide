@@ -1,28 +1,22 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
-    <id value="form-submission" />
-    <url value="https://fhir.lhcre.nhs.uk/MessageDefinition/form-submission" />
+    <id value="patient-form" />
+    <url value="https://fhir.lhcre.nhs.uk/MessageDefinition/patient-form" />
     <identifier>
         <system value="https://fhir.lhcre.nhs.uk//MessageDefinition/" />
-        <value value="form-submission" />
+        <value value="patient-form" />
     </identifier>
     <version value="1.0.0" />
-    <title value="Submission of Health/Social Care Form" />
+    <title value="Submission of Patient Form" />
     <status value="active" />
     <date value="2020-07-16" />
     <eventCoding>
         <system value="https://fhir.lhcre.nhs.uk/CodeSystem/message-event" />
-        <code value="form-submission" />
-        <display value="Submission of Health/Social Care Form" />
+        <code value="patient-form" />
+        <display value="Patient Form" />
     </eventCoding>
     <category value="consequence" />
     <focus>
-        <code value="MessageHeader" />
-        <min value="1" />
-        <max value="1" />
-    </focus>
-    <focus>
         <code value="QuestionnaireResponse" />
-        <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-QuestionnaireResponse" />
         <min value="1" />
         <max value="1" />
     </focus>
@@ -31,15 +25,5 @@
         <profile value="https://fhir.lhcre.nhs.uk/StructureDefinition/LHCRE-Patient" />
         <min value="1" />
         <max value="1" />
-    </focus>
-    <focus>
-        <code value="DocumentReference" />
-        <min value="0" />
-        <max value="*" />
-    </focus>
-    <focus>
-        <code value="Binary" />
-        <min value="0" />
-        <max value="*" />
     </focus>
 </MessageDefinition>
