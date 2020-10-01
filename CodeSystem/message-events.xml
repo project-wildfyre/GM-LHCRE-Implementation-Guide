@@ -28,7 +28,7 @@
         <display value="Unsolicited transmission of an observation message (HL7v2.4 ORU_R01)"/>
     </concept>
     <concept>
-        <code value="form-submission"/>
+        <code value="patient-form"/>
         <display value="Submission of a Health/Social Care Form"/>
     </concept>
 </CodeSystem>
