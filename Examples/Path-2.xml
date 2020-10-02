@@ -1,0 +1,553 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="fc4c67aa-88ee-4d3a-9d0a-9e3a4315a630" />
+    <meta>
+        <lastUpdated value="2020-09-20T10:22:00+00:00" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Bundle" />
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="f36927ef-7703-45ed-b0e5-6ec6723cf0f6" />
+    </identifier>
+    <type value="message" />
+    <entry>
+        <fullUrl value="urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0" />
+        <resource>
+            <MessageHeader>
+                <id value="a4409d7c-b613-477c-b623-87e60406c2f0" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MessageHeader" />
+                </meta>
+                <eventCoding>
+                    <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-MessageEvent" />
+                    <code value="family-history-1" />
+                    <display value="Family History" />
+                </eventCoding>
+                <destination>
+                    <name value="MANOR GP PRACTICE" />
+                    <endpoint value="llp:10.11.12.14:7777" />
+                    <receiver>
+                        <reference value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
+                    </receiver>
+                </destination>
+                <sender>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                </sender>
+                <source>
+                    <endpoint value="NOROT003" />
+                </source>
+                <focus>
+                    <reference value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4" />
+                </focus>
+            </MessageHeader>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+        <resource>
+            <Organization>
+                <id value="d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                    <value value="RGD12" />
+                </identifier>
+                <name value="MIDTOWN DISTRICT HOSPITAL" />
+                <address>
+                    <line value="MIDTOWN NHS FOUNDATION TRUST" />
+                    <line value="LABORATORY" />
+                    <line value="KING STREET" />
+                    <city value="MIDTOWN" />
+                    <district value="MIDTOWNSHIRE" />
+                    <postalCode value="MD9 7TF" />
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
+        <resource>
+            <Organization>
+                <id value="bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                    <value value="D77014" />
+                </identifier>
+                <name value="MANOR GP PRACTICE" />
+                <address>
+                    <line value="10/12 MANOR STREET" />
+                    <city value="MIDTOWN" />
+                    <district value="MIDTOWNSHIRE" />
+                    <postalCode value="MD37 7AH" />
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01" />
+        <resource>
+            <Practitioner>
+                <id value="f25e9d63-6a4e-4de6-b9dc-c912fda62b01" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+                    <value value="G5550677" />
+                </identifier>
+                <name>
+                    <family value="Green" />
+                    <given value="Jane" />
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+        <resource>
+            <Patient>
+                <id value="8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+                </meta>
+                <identifier>
+                    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                                <code value="01" />
+                                <display value="Number present and verified" />
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="9432003812" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="Stanner" />
+                    <given value="Lisa" />
+                </name>
+                <gender value="male" />
+                <birthDate value="1960-05-20" />
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
+        <resource>
+            <ServiceRequest>
+                <id value="d9df1431-22ac-462a-946a-f195f6c639af" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="7e9bbd01-4e52-420d-b05b-48bc671d6708" />
+                </identifier>
+                <status value="active" />
+                <intent value="order" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="54610007" />
+                        <display value="Kidney panel" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <requester>
+                    <reference value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01" />
+                    <display value="GREEN" />
+                </requester>
+                <performer>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                    <display value="Midtown District Hospital Laboratory" />
+                </performer>
+                <note>
+                    <text value="Renal function tests (electrolytes and creatinine profile)" />
+                </note>
+            </ServiceRequest>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:efae5859-28df-4e7d-be91-6df56d8215e4" />
+        <resource>
+            <DiagnosticReport>
+                <id value="efae5859-28df-4e7d-be91-6df56d8215e4" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport" />
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:d9df1431-22ac-462a-946a-f195f6c639af" />
+                </basedOn>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="721981007" />
+                        <display value="Diagnostic studies report" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <issued value="2019-11-04T12:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                    <display value="Midtown District Hospital Laboratory" />
+                </performer>
+                <specimen>
+                    <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+                </specimen>
+                <result>
+                    <reference value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db" />
+                </result>
+            </DiagnosticReport>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+        <resource>
+            <Specimen>
+                <id value="756a8361-79ce-4561-afcb-a91fe19df123" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Specimen" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="1b663fc5-9dec-49c0-9eed-18a7cfa5a6b2" />
+                </identifier>
+                <status value="available" />
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="119361006" />
+                        <display value="Plasma specimen" />
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <receivedTime value="2019-11-01T15:00:00+00:00" />
+                <collection>
+                    <collectedDateTime value="2019-11-01T11:00:00+00:00" />
+                </collection>
+            </Specimen>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db" />
+        <resource>
+            <Observation>
+                <id value="dacb177a-9501-4dcc-8b22-b941791ae0db" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+                </identifier>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1015971000000100" />
+                        <display value="Renal function tests" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                    <display value="Midtown District Hospital" />
+                </performer>
+                <specimen>
+                    <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+                </specimen>
+                <referenceRange>
+                    <low>
+                        <value value="0" />
+                    </low>
+                    <high>
+                        <value value="4" />
+                    </high>
+                </referenceRange>
+                <hasMember>
+                    <reference value="urn:uuid:5b1be8a9-bba0-4941-bb77-93d9fd3b9fcb" />
+                </hasMember>
+                <hasMember>
+                    <reference value="urn:uuid:aa89bda1-a118-4463-806d-c88681c841a8" />
+                </hasMember>
+                <hasMember>
+                    <reference value="urn:uuid:4dda41b3-4f58-45e1-9854-458d89d38052" />
+                </hasMember>
+                <hasMember>
+                    <reference value="urn:uuid:a2751035-ee56-4135-a265-8dfa0e8b0572" />
+                </hasMember>
+                <hasMember>
+                    <reference value="urn:uuid:907a4300-b289-4806-add6-32aad4725269" />
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:5b1be8a9-bba0-4941-bb77-93d9fd3b9fcb" />
+        <resource>
+            <Observation>
+                <id value="5b1be8a9-bba0-4941-bb77-93d9fd3b9fcb" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+                </identifier>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1107871000000107" />
+                        <display value="Sodium substance concentration in serum" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                    <display value="Midtown District Hospital" />
+                </performer>
+                <valueQuantity>
+                    <value value="142" />
+                    <unit value="mmol/L" />
+                    <system value="https://unitsofmeasure.org" />
+                    <code value="mmol/L" />
+                </valueQuantity>
+                <specimen>
+                    <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+                </specimen>
+                <referenceRange>
+                    <low>
+                        <value value="133" />
+                    </low>
+                    <high>
+                        <value value="146" />
+                    </high>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:aa89bda1-a118-4463-806d-c88681c841a8" />
+        <resource>
+            <Observation>
+                <id value="aa89bda1-a118-4463-806d-c88681c841a8" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+                </identifier>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1107761000000109" />
+                        <display value="Potassium substance concentration in serum" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                    <display value="Midtown District Hospital" />
+                </performer>
+                <valueQuantity>
+                    <value value="4.8" />
+                    <unit value="mmol/L" />
+                    <system value="https://unitsofmeasure.org" />
+                    <code value="mmol/L" />
+                </valueQuantity>
+                <specimen>
+                    <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+                </specimen>
+                <referenceRange>
+                    <low>
+                        <value value="3.5" />
+                    </low>
+                    <high>
+                        <value value="5.3" />
+                    </high>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:4dda41b3-4f58-45e1-9854-458d89d38052" />
+        <resource>
+            <Observation>
+                <id value="4dda41b3-4f58-45e1-9854-458d89d38052" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+                </identifier>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1106511000000102" />
+                        <display value="Chloride substance concentration in serum" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                    <display value="Midtown District Hospital" />
+                </performer>
+                <valueQuantity>
+                    <value value="105" />
+                    <unit value="mmol/L" />
+                    <system value="https://unitsofmeasure.org" />
+                    <code value="mmol/L" />
+                </valueQuantity>
+                <specimen>
+                    <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+                </specimen>
+                <referenceRange>
+                    <low>
+                        <value value="95" />
+                    </low>
+                    <high>
+                        <value value="108" />
+                    </high>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:a2751035-ee56-4135-a265-8dfa0e8b0572" />
+        <resource>
+            <Observation>
+                <id value="a2751035-ee56-4135-a265-8dfa0e8b0572" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+                </identifier>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1107001000000108" />
+                        <display value="Creatinine substance concentration in serum" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                    <display value="Midtown District Hospital" />
+                </performer>
+                <valueQuantity>
+                    <value value="64" />
+                    <unit value="&#181;mol/L" />
+                    <system value="https://unitsofmeasure.org" />
+                    <code value="&#181;mol/L" />
+                </valueQuantity>
+                <specimen>
+                    <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+                </specimen>
+                <referenceRange>
+                    <low>
+                        <value value="48" />
+                    </low>
+                    <high>
+                        <value value="128" />
+                    </high>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:907a4300-b289-4806-add6-32aad4725269" />
+        <resource>
+            <Observation>
+                <id value="907a4300-b289-4806-add6-32aad4725269" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation" />
+                </meta>
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122" />
+                    <value value="2af46949-4938-4c57-bad4-c4363e1965d5" />
+                </identifier>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1107411000000104" />
+                        <display value="Estimated glomerular filtration rate by laboratory calculation" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+                    <display value="STANNER, Lisa" />
+                </subject>
+                <effectiveDateTime value="2019-11-01T15:00:00+00:00" />
+                <performer>
+                    <reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e" />
+                    <display value="Midtown District Hospital" />
+                </performer>
+                <valueQuantity>
+                    <value value="87" />
+                    <unit value="mL/min/1.73m2" />
+                    <system value="https://unitsofmeasure.org" />
+                    <code value="mL/min/((173/100).m2)" />
+                </valueQuantity>
+                <note>
+                    <text value="The EGFR quoted must be multiplied by 1.2 if the patient is of Afro-Caribbean origin." />
+                </note>
+                <specimen>
+                    <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123" />
+                </specimen>
+                <referenceRange>
+                    <low>
+                        <value value="48" />
+                    </low>
+                    <high>
+                        <value value="128" />
+                    </high>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>
