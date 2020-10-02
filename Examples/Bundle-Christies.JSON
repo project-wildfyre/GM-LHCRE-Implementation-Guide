@@ -1,1160 +1,1105 @@
 {
-  "id": "9d5732fd-7edb-458a-9557-ebcb421196bb",
-  "identifier": {
-    "system": "http://fhir.christie.nhs.uk/TDLAB",
-    "value": "3c890fcc-bdc4-4c71-a4e9-e46ef5cc4ff7"
-  },
-  "resourceType": "Bundle",
-  "type": "message",
-  "timestamp": "2020-02-26T14:57:05.000Z",
-  "entry": [
-    {
-      "fullUrl": "urn:oid:8847198e-4d15-497b-87d8-0b039bba2ae5",
-      "resource": {
-        "id": "8847198e-4d15-497b-87d8-0b039bba2ae5",
-        "resourceType": "MessageHeader",
-        "source": {
-          "name": "TDLAB",
-          "endpoint": "TDLAB"
-        },
-        "sender": {
-          "reference": "urn:oid:89004a04-3c6f-48f2-bb42-f9caf9e3e16a"
-        },
-        "destination": [
-          {
-            "name": "CRS",
-            "endpoint": "CRS",
-            "receiver": {
-              "reference": "urn:oid:180cf767-4ca2-4c11-b210-d5cd717fc5f7"
-            }
-          }
-        ],
-        "meta": {
-          "tag": [
-            {
-              "display": "P"
-            }
-          ]
-        },
-        "event": {
-          "coding": {
-            "code": "R01",
-            "system": "R01"
-          }
-        },
-        "identifier": {
-          "code": "TD0000000111",
-          "system": "2.16.840.1.113883.2.1.3.73.815651.826686"
-        },
-        "eventCoding": {
-          "system": "https://fhir.lhcre.nhs.uk/CodeSystem/message-event",
-          "code": "unsolicited-observation",
-          "display": "Unsolicited Observations"
-        },
-        "focus": {
-          "reference": "urn:oid:6f6fccb4-89ce-486b-9948-8a1439b69a0b"
-        }
-      }
+    "resourceType": "Bundle",
+    "id": "9d5732fd-7edb-458a-9557-ebcb421196bb",
+    "identifier": {
+        "system": "http://fhir.christie.nhs.uk/TDLAB",
+        "value": "3c890fcc-bdc4-4c71-a4e9-e46ef5cc4ff7"
     },
-    {
-      "fullUrl": "urn:oid:6f6fccb4-89ce-486b-9948-8a1439b69a0b",
-      "resource": {
-        "resourceType": "DiagnosticReport",
-        "id": "6f6fccb4-89ce-486b-9948-8a1439b69a0b",
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        },
-        "result": [
-          {
-            "reference": "urn:oid:484aa19c-b75a-4877-b5fc-98552fa7a031"
-          },
-          {
-            "reference": "urn:oid:3af4a735-6135-43e2-855c-9308dde119a4"
-          },
-          {
-            "reference": "urn:oid:ecd145fe-9707-4f39-ab2f-f390068441af"
-          },
-          {
-            "reference": "urn:oid:742684f0-1120-47c0-839e-94e0a50f3076"
-          },
-          {
-            "reference": "urn:oid:d851b97e-d2cd-40e3-a285-588a5bf23455"
-          },
-          {
-            "reference": "urn:oid:e1899e4f-94ff-4a86-9913-e1bcbdd83ce2"
-          },
-          {
-            "reference": "urn:oid:3f848c0a-e5cb-4f8a-b2fa-1be5cda2b623"
-          },
-          {
-            "reference": "urn:oid:ef995ea4-bbc3-4b22-935b-a508702f8022"
-          },
-          {
-            "reference": "urn:oid:13eae6c0-5318-49d4-b222-448cb61efb3f"
-          },
-          {
-            "reference": "urn:oid:57ac3c7f-9afa-483e-a340-9bd6ba5b879b"
-          },
-          {
-            "reference": "urn:oid:464fb5be-e3a7-4820-94dc-f920f1e58a00"
-          },
-          {
-            "reference": "urn:oid:a58414a0-91f1-4d00-9cca-9da4405ac966"
-          },
-          {
-            "reference": "urn:oid:30662a39-9d1a-41df-a06d-70f6541f3f14"
-          },
-          {
-            "reference": "urn:oid:4a0e28a2-d223-45bb-a813-babd7dba3cba"
-          },
-          {
-            "reference": "urn:oid:ffdd8254-9e2f-4f93-a10d-9a17ed8ccf82"
-          },
-          {
-            "reference": "urn:oid:17e95cbd-e3ac-4508-abe6-d68944426d98"
-          }
-        ],
-        "identifier": [
-          {
-            "system" : "https://fhir.christie.nhs.uk/Id/FillerOrderNumber",
-            "value": "00200014201XT",
-            "type": {
-              "coding": [
-                {
-                  "code": "FILL",
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "code": "1XT",
-              "display": "Christie Profile"
-            }
-          ]
-        },
-        "effectivePeriod": {
-          "start": "2020-02-26T14:54:00.000Z"
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "code": "bio dis"
-              }
-            ]
-          }
-        ],
-        "status": "corrected",
-        "resultsInterpreter": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner",
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
-                "valueCodeableConcept": {
-                  "coding": [
+    "type": "message",
+    "timestamp": "2020-02-26T14:57:05.000Z",
+    "entry": [
+        {
+            "fullUrl": "urn:oid:8847198e-4d15-497b-87d8-0b039bba2ae5",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "eventCoding": {
+                    "system": "https://fhir.lhcre.nhs.uk/CodeSystem/message-event",
+                    "code": "unsolicited-observation",
+                    "display": "Unsolicited Observations"
+                },
+                "destination": [
                     {
-                      "code": "PPRF",
-                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+                        "name": "CRS",
+                        "endpoint": "CRS",
+                        "receiver": {
+                            "reference": "urn:oid:180cf767-4ca2-4c11-b210-d5cd717fc5f7"
+                        }
                     }
-                  ]
-                }
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:oid:484aa19c-b75a-4877-b5fc-98552fa7a031",
-      "resource": {
-        "id": "484aa19c-b75a-4877-b5fc-98552fa7a031",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1UE",
-              "display": "Urea+Electrolytes",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
+                ],
+                "sender": {
+                    "reference": "urn:oid:89004a04-3c6f-48f2-bb42-f9caf9e3e16a"
+                },
+                "source": {
+                    "name": "TDLAB",
+                    "endpoint": "TDLAB"
+                },
+                "focus": [
+                    {
+                        "reference": "urn:oid:6f6fccb4-89ce-486b-9948-8a1439b69a0b"
+                    }
+                ]
             }
-          ]
         },
-        "status": "unknown",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "484aa19c-b75a-4877-b5fc-98552fa7a031"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+        {
+            "fullUrl": "urn:oid:6f6fccb4-89ce-486b-9948-8a1439b69a0b",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "FILL"
+                                }
+                            ]
+                        },
+                        "system": "https://fhir.christie.nhs.uk/Id/FillerOrderNumber",
+                        "value": "00200014201XT"
+                    }
+                ],
+                "status": "corrected",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "bio dis"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "1XT",
+                            "display": "Christie Profile"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectivePeriod": {
+                    "start": "2020-02-26T14:54:00.000Z"
+                },
+                "performer": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                                            "code": "PPRF"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "resultsInterpreter": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "result": [
+                    {
+                        "reference": "urn:oid:484aa19c-b75a-4877-b5fc-98552fa7a031"
+                    },
+                    {
+                        "reference": "urn:oid:3af4a735-6135-43e2-855c-9308dde119a4"
+                    },
+                    {
+                        "reference": "urn:oid:ecd145fe-9707-4f39-ab2f-f390068441af"
+                    },
+                    {
+                        "reference": "urn:oid:742684f0-1120-47c0-839e-94e0a50f3076"
+                    },
+                    {
+                        "reference": "urn:oid:d851b97e-d2cd-40e3-a285-588a5bf23455"
+                    },
+                    {
+                        "reference": "urn:oid:e1899e4f-94ff-4a86-9913-e1bcbdd83ce2"
+                    },
+                    {
+                        "reference": "urn:oid:3f848c0a-e5cb-4f8a-b2fa-1be5cda2b623"
+                    },
+                    {
+                        "reference": "urn:oid:ef995ea4-bbc3-4b22-935b-a508702f8022"
+                    },
+                    {
+                        "reference": "urn:oid:13eae6c0-5318-49d4-b222-448cb61efb3f"
+                    },
+                    {
+                        "reference": "urn:oid:57ac3c7f-9afa-483e-a340-9bd6ba5b879b"
+                    },
+                    {
+                        "reference": "urn:oid:464fb5be-e3a7-4820-94dc-f920f1e58a00"
+                    },
+                    {
+                        "reference": "urn:oid:a58414a0-91f1-4d00-9cca-9da4405ac966"
+                    },
+                    {
+                        "reference": "urn:oid:30662a39-9d1a-41df-a06d-70f6541f3f14"
+                    },
+                    {
+                        "reference": "urn:oid:4a0e28a2-d223-45bb-a813-babd7dba3cba"
+                    },
+                    {
+                        "reference": "urn:oid:ffdd8254-9e2f-4f93-a10d-9a17ed8ccf82"
+                    },
+                    {
+                        "reference": "urn:oid:17e95cbd-e3ac-4508-abe6-d68944426d98"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:484aa19c-b75a-4877-b5fc-98552fa7a031",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "484aa19c-b75a-4877-b5fc-98552fa7a031"
+                    }
+                ],
+                "status": "unknown",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1UE",
+                            "display": "Urea+Electrolytes"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z"
+            }
+        },
+        {
+            "fullUrl": "urn:oid:3af4a735-6135-43e2-855c-9308dde119a4",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "3af4a735-6135-43e2-855c-9308dde119a4"
+                    }
+                ],
+                "status": "corrected",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1NA",
+                            "display": "Sodium"
+                        },
+                        {
+                            "system": "https://snomed.info",
+                            "code": "1020681000000107",
+                            "display": "Sodium level"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 200
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "H",
+                                "display": "High"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "133 - 146"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:ecd145fe-9707-4f39-ab2f-f390068441af",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "ecd145fe-9707-4f39-ab2f-f390068441af"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1K",
+                            "display": "Potassium........"
+                        },
+                        {
+                            "system": "https://snomed.info",
+                            "code": "1028441000000104",
+                            "display": "Potassium level"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 4.0
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "3.5 - 5.3"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:742684f0-1120-47c0-839e-94e0a50f3076",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "742684f0-1120-47c0-839e-94e0a50f3076"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1UREA",
+                            "display": "Urea............."
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 4.0
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "2.5 - 7.8"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:d851b97e-d2cd-40e3-a285-588a5bf23455",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "d851b97e-d2cd-40e3-a285-588a5bf23455"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1CREA",
+                            "display": "SCreatinine"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 44
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "44 - 97"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:e1899e4f-94ff-4a86-9913-e1bcbdd83ce2",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "e1899e4f-94ff-4a86-9913-e1bcbdd83ce2"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1CA",
+                            "display": "Calcium.........."
+                        },
+                        {
+                            "system": "https://snomed.info",
+                            "code": "1028041000000107",
+                            "display": "Calcium level"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 2.30
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "2.20 - 2.60"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:3f848c0a-e5cb-4f8a-b2fa-1be5cda2b623",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "3f848c0a-e5cb-4f8a-b2fa-1be5cda2b623"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1PHOS",
+                            "display": "Phosphate........"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 1.00
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "0.80 - 1.50"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:ef995ea4-bbc3-4b22-935b-a508702f8022",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "ef995ea4-bbc3-4b22-935b-a508702f8022"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1TP",
+                            "display": "Total Protein...."
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 70
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "60 - 80"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:13eae6c0-5318-49d4-b222-448cb61efb3f",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "13eae6c0-5318-49d4-b222-448cb61efb3f"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1ALB",
+                            "display": "Albumin.........."
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 40
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "35 - 50"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:57ac3c7f-9afa-483e-a340-9bd6ba5b879b",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "57ac3c7f-9afa-483e-a340-9bd6ba5b879b"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1GLOB",
+                            "display": "Globulin........."
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 30
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "20 - 35"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:464fb5be-e3a7-4820-94dc-f920f1e58a00",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "464fb5be-e3a7-4820-94dc-f920f1e58a00"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1ACA",
+                            "display": "Adjusted calcium."
+                        },
+                        {
+                            "system": "https://snomed.info",
+                            "code": "998341000000105",
+                            "display": "Calcium adjusted level"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 2.42
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "2.20 - 2.60"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:a58414a0-91f1-4d00-9cca-9da4405ac966",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "a58414a0-91f1-4d00-9cca-9da4405ac966"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1TBIL",
+                            "display": "Total Bilirubin.."
+                        },
+                        {
+                            "system": "https://snomed.info",
+                            "code": "1026761000000106",
+                            "display": "Total bilirubin level"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 10
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "0 - 20"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:30662a39-9d1a-41df-a06d-70f6541f3f14",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "30662a39-9d1a-41df-a06d-70f6541f3f14"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1ALP",
+                            "display": "Alk Phos........."
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 100
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "30 - 130"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:4a0e28a2-d223-45bb-a813-babd7dba3cba",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "4a0e28a2-d223-45bb-a813-babd7dba3cba"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1AST",
+                            "display": "AST.............."
+                        },
+                        {
+                            "system": "https://snomed.info",
+                            "code": "1031101000000102",
+                            "display": "Aspartate aminotransferase level"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 20
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "0 - 33"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:ffdd8254-9e2f-4f93-a10d-9a17ed8ccf82",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "ffdd8254-9e2f-4f93-a10d-9a17ed8ccf82"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1GGT",
+                            "display": "GGT.............."
+                        },
+                        {
+                            "system": "https://snomed.info",
+                            "code": "1028091000000102",
+                            "display": "Gamma-glutamyl transferase level"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 20
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "<38"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:17e95cbd-e3ac-4508-abe6-d68944426d98",
+            "resource": {
+                "resourceType": "Observation",
+                "identifier": [
+                    {
+                        "system": "urn:oid:",
+                        "value": "17e95cbd-e3ac-4508-abe6-d68944426d98"
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS",
+                            "code": "1LDH",
+                            "display": "LDH.............."
+                        },
+                        {
+                            "system": "https://snomed.info",
+                            "code": "1028111000000107",
+                            "display": "Lactate dehydrogenase level"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
+                },
+                "effectiveDateTime": "2020-02-26T14:54:00.000Z",
+                "performer": [
+                    {
+                        "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+                        "type": "Practitioner"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 140
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "referenceRange": [
+                    {
+                        "text": "120 - 246"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976",
+            "resource": {
+                "resourceType": "Patient",
+                "meta": {
+                    "lastUpdated": "2020-09-25T11:49:47.000Z"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                        "extension": [
+                            {
+                                "url": "ombCategory",
+                                "valueCoding": {
+                                    "code": "id"
+                                }
+                            },
+                            {
+                                "url": "text",
+                                "valueString": "Race"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR"
+                                }
+                            ]
+                        },
+                        "value": "200804513"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "HOSP"
+                                }
+                            ]
+                        },
+                        "value": "200804513"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "ZEDITEST",
+                        "given": [
+                            "Anne Mary 1"
+                        ],
+                        "prefix": [
+                            "MR"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1982-03-31",
+                "address": [
+                    {
+                        "line": [
+                            "Christie Hospital NHS Trust",
+                            "550 Wilmslow Road"
+                        ],
+                        "state": "M20 4BX MANCHESTER"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
+            "resource": {
+                "resourceType": "Practitioner",
+                "identifier": [
+                    {
+                        "value": "LG"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Leon Guy"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:89004a04-3c6f-48f2-bb42-f9caf9e3e16a",
+            "resource": {
+                "resourceType": "Organization",
+                "identifier": [
+                    {
+                        "value": "PATH"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:180cf767-4ca2-4c11-b210-d5cd717fc5f7",
+            "resource": {
+                "resourceType": "Organization",
+                "identifier": [
+                    {
+                        "system": "http://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "QPH"
+                    }
+                ]
+            }
         }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:3af4a735-6135-43e2-855c-9308dde119a4",
-      "resource": {
-        "id": "3af4a735-6135-43e2-855c-9308dde119a4",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1NA",
-              "display": "Sodium",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            },
-            {
-              "code": "1020681000000107",
-              "display": "Sodium level",
-              "system": "https://snomed.info"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "200",
-          "units": "mmol/L"
-        },
-        "referenceRange": [
-          {
-            "text": "133 - 146"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "H",
-                "display": "High",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "corrected",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "3af4a735-6135-43e2-855c-9308dde119a4"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:ecd145fe-9707-4f39-ab2f-f390068441af",
-      "resource": {
-        "id": "ecd145fe-9707-4f39-ab2f-f390068441af",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1K",
-              "display": "Potassium........",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            },
-            {
-              "code": "1028441000000104",
-              "display": "Potassium level",
-              "system": "https://snomed.info"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "4.0",
-          "units": "mmol/L"
-        },
-        "referenceRange": [
-          {
-            "text": "3.5 - 5.3"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "ecd145fe-9707-4f39-ab2f-f390068441af"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:742684f0-1120-47c0-839e-94e0a50f3076",
-      "resource": {
-        "id": "742684f0-1120-47c0-839e-94e0a50f3076",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1UREA",
-              "display": "Urea.............",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "4.0",
-          "units": "mmol/L"
-        },
-        "referenceRange": [
-          {
-            "text": "2.5 - 7.8"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "742684f0-1120-47c0-839e-94e0a50f3076"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:d851b97e-d2cd-40e3-a285-588a5bf23455",
-      "resource": {
-        "id": "d851b97e-d2cd-40e3-a285-588a5bf23455",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1CREA",
-              "display": "SCreatinine",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "44",
-          "units": "umol/L"
-        },
-        "referenceRange": [
-          {
-            "text": "44 - 97"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "d851b97e-d2cd-40e3-a285-588a5bf23455"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:e1899e4f-94ff-4a86-9913-e1bcbdd83ce2",
-      "resource": {
-        "id": "e1899e4f-94ff-4a86-9913-e1bcbdd83ce2",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1CA",
-              "display": "Calcium..........",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            },
-            {
-              "code": "1028041000000107",
-              "display": "Calcium level",
-              "system": "https://snomed.info"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "2.30",
-          "units": "mmol/L"
-        },
-        "referenceRange": [
-          {
-            "text": "2.20 - 2.60"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "e1899e4f-94ff-4a86-9913-e1bcbdd83ce2"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:3f848c0a-e5cb-4f8a-b2fa-1be5cda2b623",
-      "resource": {
-        "id": "3f848c0a-e5cb-4f8a-b2fa-1be5cda2b623",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1PHOS",
-              "display": "Phosphate........",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "1.00",
-          "units": "mmol/L"
-        },
-        "referenceRange": [
-          {
-            "text": "0.80 - 1.50"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "3f848c0a-e5cb-4f8a-b2fa-1be5cda2b623"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:ef995ea4-bbc3-4b22-935b-a508702f8022",
-      "resource": {
-        "id": "ef995ea4-bbc3-4b22-935b-a508702f8022",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1TP",
-              "display": "Total Protein....",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "70",
-          "units": "g/L"
-        },
-        "referenceRange": [
-          {
-            "text": "60 - 80"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "ef995ea4-bbc3-4b22-935b-a508702f8022"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:13eae6c0-5318-49d4-b222-448cb61efb3f",
-      "resource": {
-        "id": "13eae6c0-5318-49d4-b222-448cb61efb3f",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1ALB",
-              "display": "Albumin..........",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "40",
-          "units": "g/L"
-        },
-        "referenceRange": [
-          {
-            "text": "35 - 50"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "13eae6c0-5318-49d4-b222-448cb61efb3f"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:57ac3c7f-9afa-483e-a340-9bd6ba5b879b",
-      "resource": {
-        "id": "57ac3c7f-9afa-483e-a340-9bd6ba5b879b",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1GLOB",
-              "display": "Globulin.........",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "30",
-          "units": "g/L"
-        },
-        "referenceRange": [
-          {
-            "text": "20 - 35"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "57ac3c7f-9afa-483e-a340-9bd6ba5b879b"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:464fb5be-e3a7-4820-94dc-f920f1e58a00",
-      "resource": {
-        "id": "464fb5be-e3a7-4820-94dc-f920f1e58a00",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1ACA",
-              "display": "Adjusted calcium.",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            },
-            {
-              "code": "998341000000105",
-              "display": "Calcium adjusted level",
-              "system": "https://snomed.info"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "2.42",
-          "units": "mmol/L"
-        },
-        "referenceRange": [
-          {
-            "text": "2.20 - 2.60"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "464fb5be-e3a7-4820-94dc-f920f1e58a00"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:a58414a0-91f1-4d00-9cca-9da4405ac966",
-      "resource": {
-        "id": "a58414a0-91f1-4d00-9cca-9da4405ac966",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1TBIL",
-              "display": "Total Bilirubin..",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            },
-            {
-              "code": "1026761000000106",
-              "display": "Total bilirubin level",
-              "system": "https://snomed.info"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "10",
-          "units": "umol/L"
-        },
-        "referenceRange": [
-          {
-            "text": "0 - 20"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "a58414a0-91f1-4d00-9cca-9da4405ac966"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:30662a39-9d1a-41df-a06d-70f6541f3f14",
-      "resource": {
-        "id": "30662a39-9d1a-41df-a06d-70f6541f3f14",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1ALP",
-              "display": "Alk Phos.........",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "100",
-          "units": "IU/L"
-        },
-        "referenceRange": [
-          {
-            "text": "30 - 130"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "30662a39-9d1a-41df-a06d-70f6541f3f14"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:4a0e28a2-d223-45bb-a813-babd7dba3cba",
-      "resource": {
-        "id": "4a0e28a2-d223-45bb-a813-babd7dba3cba",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1AST",
-              "display": "AST..............",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            },
-            {
-              "code": "1031101000000102",
-              "display": "Aspartate aminotransferase level",
-              "system": "https://snomed.info"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "20",
-          "units": "IU/L"
-        },
-        "referenceRange": [
-          {
-            "text": "0 - 33"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "4a0e28a2-d223-45bb-a813-babd7dba3cba"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:ffdd8254-9e2f-4f93-a10d-9a17ed8ccf82",
-      "resource": {
-        "id": "ffdd8254-9e2f-4f93-a10d-9a17ed8ccf82",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1GGT",
-              "display": "GGT..............",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            },
-            {
-              "code": "1028091000000102",
-              "display": "Gamma-glutamyl transferase level",
-              "system": "https://snomed.info"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "20",
-          "units": "IU/L"
-        },
-        "referenceRange": [
-          {
-            "text": "<38"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "ffdd8254-9e2f-4f93-a10d-9a17ed8ccf82"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:17e95cbd-e3ac-4508-abe6-d68944426d98",
-      "resource": {
-        "id": "17e95cbd-e3ac-4508-abe6-d68944426d98",
-        "resourceType": "Observation",
-        "code": {
-          "coding": [
-            {
-              "code": "1LDH",
-              "display": "LDH..............",
-              "system": "https://fhir.christie.nhs.uk/CodeSystem/OBS"
-            },
-            {
-              "code": "1028111000000107",
-              "display": "Lactate dehydrogenase level",
-              "system": "https://snomed.info"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "value": "140",
-          "units": "IU/L"
-        },
-        "referenceRange": [
-          {
-            "text": "120 - 246"
-          }
-        ],
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "N",
-                "display": "Normal",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-              }
-            ]
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2020-02-26T14:54:00.000Z",
-        "performer": [
-          {
-            "reference": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-            "type": "Practitioner"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:oid:",
-            "value": "17e95cbd-e3ac-4508-abe6-d68944426d98"
-          }
-        ],
-        "subject": {
-          "reference": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:8f9ed341-9876-4b1e-91ac-0380fc27b976",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "8f9ed341-9876-4b1e-91ac-0380fc27b976",
-        "identifier": [
-          {
-            "value": "200804513",
-            "type": {
-              "coding": [
-                {
-                  "code": "MR",
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
-                }
-              ]
-            }
-          },
-          {
-            "value": "200804513",
-            "type": {
-              "coding": [
-                {
-                  "code": "HOSP",
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
-                }
-              ]
-            }
-          }
-        ],
-        "name": [
-          {
-            "family": "ZEDITEST",
-            "given": [
-              "Anne Mary 1"
-            ],
-            "prefix": "MR",
-            "use": {
-              "code": "official",
-              "display": "Official",
-              "system": "http://hl7.org/fhir/ValueSet/name-use"
-            }
-          }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
-            "extension": [
-              {
-                "url": "ombCategory",
-                "valueCoding": {
-                  "code": "id"
-                }
-              },
-              {
-                "url": "text",
-                "valueString": "Race"
-              }
-            ]
-          }
-        ],
-        "birthDate": "1982-03-31",
-        "gender": "female",
-        "address": [
-          {
-            "line": [
-              "Christie Hospital NHS Trust",
-              "550 Wilmslow Road"
-            ],
-            "state": "M20 4BX MANCHESTER"
-          }
-        ],
-        "meta": {
-          "lastUpdated": "2020-09-25T11:49:47.000Z"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:oid:70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-      "resource": {
-        "id": "70c1995d-c5d3-47c3-b8fe-1dfe4f521f59",
-        "resourceType": "Practitioner",
-        "identifier": [
-          {
-            "value": "LG"
-          }
-        ],
-        "name": [
-          {
-            "family": "Leon Guy"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:oid:89004a04-3c6f-48f2-bb42-f9caf9e3e16a",
-      "resource": {
-        "id": "89004a04-3c6f-48f2-bb42-f9caf9e3e16a",
-        "resourceType": "Organization",
-        "identifier": [
-          {
-            "value": "PATH"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:oid:180cf767-4ca2-4c11-b210-d5cd717fc5f7",
-      "resource": {
-        "id": "180cf767-4ca2-4c11-b210-d5cd717fc5f7",
-        "resourceType": "Organization",
-        "identifier": [
-          {
-            "value": "QPH",
-            "system": "http://fhir.nhs.uk/Id/ods-organization-code"
-          }
-        ]
-      }
-    }
-  ]
+    ]
 }
