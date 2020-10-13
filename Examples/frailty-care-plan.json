@@ -10419,7 +10419,7 @@
         "identifier": [
           {
             "system": "http://www.blackpear.com/MedicalRecord/EntityID",
-            "value": "DIAGNOSIS _OF_DELIRIUM"
+            "value": "DIAGNOSIS_OF_DELIRIUM"
           }
         ],
         "code": {
