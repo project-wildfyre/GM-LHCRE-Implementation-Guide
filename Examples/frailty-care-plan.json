@@ -535,6 +535,51 @@
                 }
               }
             ]
+          },
+          {
+            "linkId": "44",
+            "text": "Missing Link CarePlan",
+            "answer": [
+              {
+                "valueReference": {
+                  "reference": "urn:uuid:3977f3566b05e392664387b68f12e5f1"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "45",
+            "text": "Missing Link DocumentReference",
+            "answer": [
+              {
+                "valueReference": {
+                  "reference": "urn:uuid:cecf91fb2e6a6a3e0ee3aaebc42d288f"
+                }
+              }
+            ]
+          }
+         ,
+          {
+            "linkId": "46",
+            "text": "Missing Link Condition",
+            "answer": [
+              {
+                "valueReference": {
+                  "reference": "urn:uuid:c3c913d9241f9284995f4a9dd2f156d1"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "47",
+            "text": "Missing Link Observation - Lives in supported housing",
+            "answer": [
+              {
+                "valueReference": {
+                  "reference": "urn:uuid:33b48bc7c6bd0e120c937f277bacd4b5"
+                }
+              }
+            ]
           }
         ]
       }
