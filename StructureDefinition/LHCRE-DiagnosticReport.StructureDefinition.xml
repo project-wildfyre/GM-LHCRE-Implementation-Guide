@@ -38,6 +38,13 @@
       <path value="DiagnosticReport.identifier.value" />
       <min value="1" />
     </element>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-ReportCodeSnCT" />
+      </binding>
+    </element>
     <element id="DiagnosticReport.performer">
       <path value="DiagnosticReport.performer" />
       <type>
