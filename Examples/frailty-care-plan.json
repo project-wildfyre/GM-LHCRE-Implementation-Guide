@@ -4,389 +4,535 @@
     "system": "https://coresdk.blackpear.com",
     "value": "5255ff4d-625a-4f9d-d07a-1234469801ae"
   },
-  "type": "document",
+  "type": "message",
   "timestamp": "2020-10-06T12:46:29.060Z",
   "entry": [
     {
-      "fullUrl": "urn:uuid:63aa522ac14098ba4de84a5650456ddd",
+      "fullUrl": "urn:oid:22ed2deb-effa-408c-9437-d3c4975ff448",
       "resource": {
-        "resourceType": "Composition",
-        "identifier": {
-          "system": "http://www.blackpear.com/MedicalRecord/EntityID",
-          "value": "MAIN_COMPOSITION"
+        "resourceType": "MessageHeader",
+        "eventCoding": {
+          "system": "https://fhir.lhcre.nhs.uk/CodeSystem/message-event",
+          "code": "patient-form",
+          "display": "Patient Form"
         },
-        "status": "final",
-        "type": {
-          "coding": [
-            {
-              "system": "http://fhir.blackpear.com/bpc",
-              "code": "GM_FRAILTY_DEMENTIA",
-              "display": "Greater Manchester Frailty and Dementia Care Plan"
-            }
-          ],
-          "text": "Greater Manchester Frailty and Dementia Care Plan"
+        "destination": [
+          {
+            "name": "GM Rhapsody",
+            "target": {
+              "display": "GM Rhapsody"
+            },
+            "endpoint": "https://urlofrhapsodyendpoint"
+          }
+        ],
+        "sender": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "QRP"
+          },
+          "display": "GM BP"
         },
+        "source": {
+          "name": "BP",
+          "endpoint": "https://urlofbp"
+        },
+        "focus": [
+          {
+            "reference": "urn:oid:3915b469-57b7-470f-942f-e276c4458d63"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:oid:3915b469-57b7-470f-942f-e276c4458d63",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "identifier": [
+          {
+            "system": "https://fhir.epro.uk/Id/FormId",
+            "value": "108512374"
+          }
+        ],
+        "questionnaire": "https://fhir.gm.nhs.uk/Questionnaire/bp",
+        "status": "completed",
         "subject": {
           "reference": "urn:uuid:f7b9b5a79f03b81478d4e60f5237468c"
         },
-        "date": "2020-10-06T12:46:23.905Z",
-        "author": [
+        "authored": "2020-09-24T04:44:16+00:00",
+        "source": {
+          "reference": "urn:uuid:67c590c00ae660b76d67a3f13c96f9f0"
+        },
+        "item": [
           {
-            "reference": "urn:uuid:67c590c00ae660b76d67a3f13c96f9f0"
-          }
-        ],
-        "title": "Black Pear Care Plan",
-        "confidentiality": "N",
-        "attester": [
-          {
-            "mode": "professional",
-            "party": {
-              "reference": "urn:uuid:67c590c00ae660b76d67a3f13c96f9f0"
-            }
-          }
-        ],
-        "section": [
-          {
-            "title": "Active significant problems",
-            "entry": [
+            "linkId": "1",
+            "text": "Active significant problems",
+            "answer": [
               {
-                "reference": "urn:uuid:dfb309e5c2c3d07b88b576df9cf34c36"
+                "valueReference": {
+                  "reference": "urn:uuid:dfb309e5c2c3d07b88b576df9cf34c36"
+                }
               }
             ]
           },
           {
-            "title": "Inform patient status",
-            "entry": [
+            "linkId": "2",
+            "text": "Inform patient status",
+            "answer": [
               {
-                "reference": "urn:uuid:ca4273f1533c32a9b5e39433ff801c25"
+                "valueReference": {
+                  "reference": "urn:uuid:ca4273f1533c32a9b5e39433ff801c25"
+                }
               }
             ]
           },
           {
-            "title": "Has dementia",
-            "entry": [
+            "linkId": "3",
+            "text": "Has dementia",
+            "answer": [
               {
-                "reference": "urn:uuid:b71324081feba2720a902f63cb3288dc"
+                "valueReference": {
+                  "reference": "urn:uuid:b71324081feba2720a902f63cb3288dc"
+                }
               }
             ]
           },
           {
-            "title": "Patient has frailty",
-            "entry": [
+            "linkId": "4",
+            "text": "Patient has frailty",
+            "answer": [
               {
-                "reference": "urn:uuid:721b3e443c5b7dae93f9d26baad0be6d"
+                "valueReference": {
+                  "reference": "urn:uuid:721b3e443c5b7dae93f9d26baad0be6d"
+                }
               }
             ]
           },
           {
-            "title": "Lives alone",
-            "entry": [
+            "linkId": "5",
+            "text": "Lives alone",
+            "answer": [
               {
-                "reference": "urn:uuid:2b51a1e840faef9883a39aad418fb3e0"
+                "valueReference": {
+                  "reference": "urn:uuid:2b51a1e840faef9883a39aad418fb3e0"
+                }
               }
             ]
           },
           {
-            "title": "Name and type of person patient lives with",
-            "entry": [
+            "linkId": "6",
+            "text": "Name and type of person patient lives with",
+            "answer": [
               {
-                "reference": "urn:uuid:6ab452330321cc12e035051440457a07"
+                "valueReference": {
+                  "reference": "urn:uuid:6ab452330321cc12e035051440457a07"
+                }
               }
             ]
           },
           {
-            "title": "Accommodation information",
-            "entry": [
+            "linkId": "7",
+            "text": "Accommodation information",
+            "answer": [
               {
-                "reference": "urn:uuid:13c1ea72c4a0f601ec2f3a28b79161af"
+                "valueReference": {
+                  "reference": "urn:uuid:13c1ea72c4a0f601ec2f3a28b79161af"
+                }
               }
             ]
           },
           {
-            "title": "Access to patient accommodation",
-            "entry": [
+            "linkId": "8",
+            "text": "Access to patient accommodation",
+            "answer": [
               {
-                "reference": "urn:uuid:9c6fcfddcd39cbcddcade32d0ee455b0"
+                "valueReference": {
+                  "reference": "urn:uuid:9c6fcfddcd39cbcddcade32d0ee455b0"
+                }
               }
             ]
           },
           {
-            "title": "Active repeat prescriptions",
-            "entry": [
+            "linkId": "9",
+            "text": "Active repeat prescriptions",
+            "answer": [
               {
-                "reference": "urn:uuid:ad385f9c08f846174d5155d07a5a68d1"
+                "valueReference": {
+                  "reference": "urn:uuid:ad385f9c08f846174d5155d07a5a68d1"
+                }
               }
             ]
           },
           {
-            "title": "Recent acute prescriptions",
-            "entry": [
+            "linkId": "10",
+            "text": "Recent acute prescriptions",
+            "answer": [
               {
-                "reference": "urn:uuid:ea74ac12db690c1ac6c0ee22c77a9ee7"
+                "valueReference": {
+                  "reference": "urn:uuid:ea74ac12db690c1ac6c0ee22c77a9ee7"
+                }
               }
             ]
           },
           {
-            "title": "Allergies",
-            "entry": [
+            "linkId": "11",
+            "text": "Allergies",
+            "answer": [
               {
-                "reference": "urn:uuid:c56a66cd3824824192f3378486a897fc"
+                "valueReference": {
+                  "reference": "urn:uuid:c56a66cd3824824192f3378486a897fc"
+                }
               }
             ]
           },
           {
-            "title": "Liver blood tests",
-            "entry": [
+            "linkId": "12",
+            "text": "Liver blood tests",
+            "answer": [
               {
-                "reference": "urn:uuid:60d976c87266062cc4408a9c3b8c93bc"
+                "valueReference": {
+                  "reference": "urn:uuid:60d976c87266062cc4408a9c3b8c93bc"
+                }
               }
             ]
           },
           {
-            "title": "Full blood count",
-            "entry": [
+            "linkId": "13",
+            "text": "Full blood count",
+            "answer": [
               {
-                "reference": "urn:uuid:ef4a66ca83fe25f062be47718aea0a45"
+                "valueReference": {
+                  "reference": "urn:uuid:ef4a66ca83fe25f062be47718aea0a45"
+                }
               }
             ]
           },
           {
-            "title": "Full blood count",
-            "entry": [
+            "linkId": "14",
+            "text": "Full blood count (2)",
+            "answer": [
               {
-                "reference": "urn:uuid:6a0fab60cc912d93a0cb2247f6290b24"
+                "valueReference": {
+                  "reference": "urn:uuid:6a0fab60cc912d93a0cb2247f6290b24"
+                }
               }
             ]
           },
           {
-            "title": "Hyperlipidaemia screening",
-            "entry": [
+            "linkId": "15",
+            "text": "Hyperlipidaemia screening",
+            "answer": [
               {
-                "reference": "urn:uuid:a682f01eeb3e4a53df1a4799120b06ae"
+                "valueReference": {
+                  "reference": "urn:uuid:a682f01eeb3e4a53df1a4799120b06ae"
+                }
               }
             ]
           },
           {
-            "title": "Random glucose",
-            "entry": [
+            "linkId": "16",
+            "text": "Random glucose",
+            "answer": [
               {
-                "reference": "urn:uuid:9249c5d068b256929205525b494cd98b"
+                "valueReference": {
+                  "reference": "urn:uuid:9249c5d068b256929205525b494cd98b"
+                }
               }
             ]
           },
           {
-            "title": "HbA1C history",
-            "entry": [
+            "linkId": "17",
+            "text": "HbA1C history",
+            "answer": [
               {
-                "reference": "urn:uuid:ce07b460de902382c39e076ed1f6fbd1"
+                "valueReference": {
+                  "reference": "urn:uuid:ce07b460de902382c39e076ed1f6fbd1"
+                }
               }
             ]
           },
           {
-            "title": "Thyroid function test history",
-            "entry": [
+            "linkId": "18",
+            "text": "Thyroid function test history",
+            "answer": [
               {
-                "reference": "urn:uuid:8c77cd89a5b143323982050c7972e79c"
+                "valueReference": {
+                  "reference": "urn:uuid:8c77cd89a5b143323982050c7972e79c"
+                }
               }
             ]
           },
           {
-            "title": "Vitamin B12 history",
-            "entry": [
+            "linkId": "19",
+            "text": "Vitamin B12 history",
+            "answer": [
               {
-                "reference": "urn:uuid:959adef815b14f50aaa7a979fb7add27"
+                "valueReference": {
+                  "reference": "urn:uuid:959adef815b14f50aaa7a979fb7add27"
+                }
               }
             ]
           },
           {
-            "title": "ESR history",
-            "entry": [
+            "linkId": "20",
+            "text": "ESR history",
+            "answer": [
               {
-                "reference": "urn:uuid:7750316e7aea4d068e87fb196ecb7dc9"
+                "valueReference": {
+                  "reference": "urn:uuid:7750316e7aea4d068e87fb196ecb7dc9"
+                }
               }
             ]
           },
           {
-            "title": "Serum folate history",
-            "entry": [
+            "linkId": "21",
+            "text": "Serum folate history",
+            "answer": [
               {
-                "reference": "urn:uuid:c7a76e98e0b14581fdfcb3595f307f32"
+                "valueReference": {
+                  "reference": "urn:uuid:c7a76e98e0b14581fdfcb3595f307f32"
+                }
               }
             ]
           },
           {
-            "title": "Serum calcium history",
-            "entry": [
+            "linkId": "22",
+            "text": "Serum calcium history",
+            "answer": [
               {
-                "reference": "urn:uuid:6df8e48f9bd610cf103dd7c31692b92e"
+                "valueReference": {
+                  "reference": "urn:uuid:6df8e48f9bd610cf103dd7c31692b92e"
+                }
               }
             ]
           },
           {
-            "title": "Package of care items",
-            "entry": [
+            "linkId": "23",
+            "text": "Package of care items",
+            "answer": [
               {
-                "reference": "urn:uuid:9d3ed6d240a73692d1ec0a46fb93044a"
+                "valueReference": {
+                  "reference": "urn:uuid:9d3ed6d240a73692d1ec0a46fb93044a"
+                }
               }
             ]
           },
           {
-            "title": "Sensory items",
-            "entry": [
+            "linkId": "24",
+            "text": "Sensory items",
+            "answer": [
               {
-                "reference": "urn:uuid:2c8ae9126056d95e6cbf6dd8c6f05a6a"
+                "valueReference": {
+                  "reference": "urn:uuid:2c8ae9126056d95e6cbf6dd8c6f05a6a"
+                }
               }
             ]
           },
           {
-            "title": "Mobility items",
-            "entry": [
+            "linkId": "25",
+            "text": "Mobility items",
+            "answer": [
               {
-                "reference": "urn:uuid:622376098a25b858e3712c38c8709851"
+                "valueReference": {
+                  "reference": "urn:uuid:622376098a25b858e3712c38c8709851"
+                }
               }
             ]
           },
           {
-            "title": "Risk items",
-            "entry": [
+            "linkId": "26",
+            "text": "Risk items",
+            "answer": [
               {
-                "reference": "urn:uuid:84c81fd9027f97fb38c5cc067c30700a"
+                "valueReference": {
+                  "reference": "urn:uuid:84c81fd9027f97fb38c5cc067c30700a"
+                }
               }
             ]
           },
           {
-            "title": "Nutrition skin continence",
-            "entry": [
+            "linkId": "27",
+            "text": "Nutrition skin continence",
+            "answer": [
               {
-                "reference": "urn:uuid:4ca0071fab7b6d63800a9fdb5b7cd76f"
+                "valueReference": {
+                  "reference": "urn:uuid:4ca0071fab7b6d63800a9fdb5b7cd76f"
+                }
               }
             ]
           },
           {
-            "title": "Community physical observations",
-            "entry": [
+            "linkId": "28",
+            "text": "Community physical observations",
+            "answer": [
               {
-                "reference": "urn:uuid:0c42e3a7032fe873cb7ec71a0b66eb19"
+                "valueReference": {
+                  "reference": "urn:uuid:0c42e3a7032fe873cb7ec71a0b66eb19"
+                }
               }
             ]
           },
           {
-            "title": "Barthel Scale",
-            "entry": [
+            "linkId": "29",
+            "text": "Barthel Scale",
+            "answer": [
               {
-                "reference": "urn:uuid:8c5bffd304dcaf69e8b69f88ecb45335"
+                "valueReference": {
+                  "reference": "urn:uuid:8c5bffd304dcaf69e8b69f88ecb45335"
+                }
               }
             ]
           },
           {
-            "title": "Legal items",
-            "entry": [
+            "linkId": "30",
+            "text": "Legal items",
+            "answer": [
               {
-                "reference": "urn:uuid:9d671de97632555ba13e9ceda7442d07"
+                "valueReference": {
+                  "reference": "urn:uuid:9d671de97632555ba13e9ceda7442d07"
+                }
               }
             ]
           },
           {
-            "title": "Community MDT",
-            "entry": [
+            "linkId": "31",
+            "text": "Community MDT",
+            "answer": [
               {
-                "reference": "urn:uuid:2527af794f0561b8ca86de3c89d79972"
+                "valueReference": {
+                  "reference": "urn:uuid:2527af794f0561b8ca86de3c89d79972"
+                }
               }
             ]
           },
           {
-            "title": "Frailty items",
-            "entry": [
+            "linkId": "32",
+            "text": "Frailty items",
+            "answer": [
               {
-                "reference": "urn:uuid:4fd2a9a3b6585c514dd5a87afbf5ffd3"
+                "valueReference": {
+                  "reference": "urn:uuid:4fd2a9a3b6585c514dd5a87afbf5ffd3"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id CREATOR",
-            "entry": [
+            "linkId": "33",
+            "text": "Resource with id CREATOR",
+            "answer": [
               {
-                "reference": "urn:uuid:10cf082ed660caba21e1214687723e90"
+                "valueReference": {
+                  "reference": "urn:uuid:10cf082ed660caba21e1214687723e90"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id CREATOR_ORGANISATION",
-            "entry": [
+            "linkId": "34",
+            "text": "Resource with id CREATOR_ORGANISATION",
+            "answer": [
               {
-                "reference": "urn:uuid:95241fa86b0a8b2e3960886176769853"
+                "valueReference": {
+                  "reference": "urn:uuid:95241fa86b0a8b2e3960886176769853"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id LAST_AUTHOR",
-            "entry": [
+            "linkId": "35",
+            "text": "Resource with id LAST_AUTHOR",
+            "answer": [
               {
-                "reference": "urn:uuid:a28fbab843fc45eb3ef69219f7cca241"
+                "valueReference": {
+                  "reference": "urn:uuid:a28fbab843fc45eb3ef69219f7cca241"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id LAST_AUTHOR_ORGANISATION",
-            "entry": [
+            "linkId": "36",
+            "text": "Resource with id LAST_AUTHOR_ORGANISATION",
+            "answer": [
               {
-                "reference": "urn:uuid:ffc18c8eab55677856fde582eb95689d"
+                "valueReference": {
+                  "reference": "urn:uuid:ffc18c8eab55677856fde582eb95689d"
+                }
               }
             ]
           },
           {
-            "title": "Memory function Dementia Teams",
-            "entry": [
+            "linkId": "37",
+            "text": "Memory function Dementia Teams",
+            "answer": [
               {
-                "reference": "urn:uuid:646d417bdd7412cc1071390c41b3f0ca"
+                "valueReference": {
+                  "reference": "urn:uuid:646d417bdd7412cc1071390c41b3f0ca"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id USUAL_GP",
-            "entry": [
+            "linkId": "38",
+            "text": "Resource with id USUAL_GP",
+            "answer": [
               {
-                "reference": "urn:uuid:56f112d6751ea0ed112315a384ca804f"
+                "valueReference": {
+                  "reference": "urn:uuid:56f112d6751ea0ed112315a384ca804f"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id KEY_WORKER",
-            "entry": [
+            "linkId": "39",
+            "text": "Resource with id KEY_WORKER",
+            "answer": [
               {
-                "reference": "urn:uuid:0006e8cc1411a43d65f6fb3360ffdabc"
+                "valueReference": {
+                  "reference": "urn:uuid:0006e8cc1411a43d65f6fb3360ffdabc"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id FORMAL_CARER1",
-            "entry": [
+            "linkId": "40",
+            "text": "Resource with id FORMAL_CARER1",
+            "answer": [
               {
-                "reference": "urn:uuid:4517e1c9516c713d928899fdb0a1cdfa"
+                "valueReference": {
+                  "reference": "urn:uuid:4517e1c9516c713d928899fdb0a1cdfa"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id FORMAL_CARER2",
-            "entry": [
+            "linkId": "41",
+            "text": "Resource with id FORMAL_CARER2",
+            "answer": [
               {
-                "reference": "urn:uuid:f3d7e8b0ec5330751e2be4907e03992d"
+                "valueReference": {
+                  "reference": "urn:uuid:f3d7e8b0ec5330751e2be4907e03992d"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id FORMAL_CARER_4",
-            "entry": [
+            "linkId": "42",
+            "text": "Resource with id FORMAL_CARER_4",
+            "answer": [
               {
-                "reference": "urn:uuid:dae8c06948c1ef09bd8550ffc398dbd5"
+                "valueReference": {
+                  "reference": "urn:uuid:dae8c06948c1ef09bd8550ffc398dbd5"
+                }
               }
             ]
           },
           {
-            "title": "Resource with id MAIN_INFORMAL_CARER",
-            "entry": [
+            "linkId": "43",
+            "text": "Resource with id MAIN_INFORMAL_CARER",
+            "answer": [
               {
-                "reference": "urn:uuid:59a753b982edd27e3710f5c66412e4e6"
+                "valueReference": {
+                  "reference": "urn:uuid:59a753b982edd27e3710f5c66412e4e6"
+                }
               }
             ]
           }
