@@ -72,6 +72,10 @@
             <mode value="receiver"/>
             <definition value="https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update"/>
         </supportedMessage>
+        <supportedMessage>
+            <mode value="receiver"/>
+            <definition value="https://fhir.nhs.uk/R4/MessageDefinition/patient-notification"/>
+        </supportedMessage>
 
     </messaging>
 </CapabilityStatement>
