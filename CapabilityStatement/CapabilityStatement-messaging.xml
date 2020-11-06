@@ -34,6 +34,10 @@
                 </coding>
             </service>
         </security>
+        <resource>
+            <type value="MessageHeader"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader"/>
+        </resource>
         <operation>
             <name value="validate"/>
             <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
